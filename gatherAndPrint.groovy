@@ -1,4 +1,4 @@
-// code here
+import org.kohsuke.github.GitHub;
 
 GitHub getGithub() throws IOException {
 	File workspace = new File(System.getProperty("user.home") + "/bowler-workspace/");
