@@ -1,5 +1,9 @@
+import org.kohsuke.github.GHAsset
 import org.kohsuke.github.GHOrganization
+import org.kohsuke.github.GHRelease
+import org.kohsuke.github.GHRepository
 import org.kohsuke.github.GitHub;
+import org.kohsuke.github.PagedIterable
 
 import com.neuronrobotics.bowlerstudio.scripting.PasswordManager
 
@@ -29,4 +33,23 @@ if (dest == null) {
 	System.out.println("FAIL, you do not have access to " + projectDestBaseName);
 	return;
 }
+
+PagedIterable<GHRepository> repos = dest.listRepositories();
+for (GHRepository R : repos) {
+	String rGetFullName = R.getFullName()
+	String tmpDirsLocation = System.getProperty("java.io.tmpdir");
+	File tmp = new File(tmpDirsLocation+"/"+rGetFullName)
+	tmp.mkdirs( )
+	//println R.getHtmlUrl()
+	GHRelease release= R.getLatestRelease()
+	if(release!=null) {
+		println rGetFullName
+		List<GHAsset>  assets= release.getAssets()
+		for(GHAsset asset :assets) {
+			println "\t"+ asset.browserDownloadUrl
+		}
+	}
+}
+
+
 
