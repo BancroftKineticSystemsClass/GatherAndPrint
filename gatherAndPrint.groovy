@@ -1,4 +1,7 @@
+import org.kohsuke.github.GHOrganization
 import org.kohsuke.github.GitHub;
+
+import com.neuronrobotics.bowlerstudio.scripting.PasswordManager
 
 GitHub getGithub() throws IOException {
 	File workspace = new File(System.getProperty("user.home") + "/bowler-workspace/");
@@ -18,4 +21,12 @@ GitHub getGithub() throws IOException {
 
 GitHub github = getGithub();
 
+String projectDestBaseName = "BancroftKineticSystemsClass"
+
+GHOrganization dest = github.getMyOrganizations().get(projectDestBaseName);
+
+if (dest == null) {
+	System.out.println("FAIL, you do not have access to " + projectDestBaseName);
+	return;
+}
 
