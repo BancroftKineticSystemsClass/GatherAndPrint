@@ -167,7 +167,7 @@ for(File f:toLoad) {
 	get.setName(name)
 	parts.add(get)
 	count++;
-	if(count>11) {
+	if(count>8) {
 		get.setPrintBedNumber(1)
 	}
 }
