@@ -116,7 +116,7 @@ void loadAllFiles(ArrayList<File> files, File directory) {
 	if(!hasPrintBed) {
 		for(File f:filesInDir) {
 			if(!f.isDirectory()){
-				if(f.getName().contains(".stl")) {
+				if(f.getName().contains(".stl")&& !f.getName().contains("Part")) {
 					files.add(f)
 				}
 			}
