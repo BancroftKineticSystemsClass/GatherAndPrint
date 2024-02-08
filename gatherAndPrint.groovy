@@ -167,7 +167,10 @@ for(File f:toLoad) {
 	get.setName(name)
 	parts.add(get)
 	count++;
-	if(count>8) {
+	if(count>5) {
+		if(count%2==0){
+		get=get.rotz(90)
+		}
 		get.setPrintBedNumber(1)
 	}
 }
