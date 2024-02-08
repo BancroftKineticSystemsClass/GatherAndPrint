@@ -165,14 +165,16 @@ for(File f:toLoad) {
 	CSG get = Vitamins.get(f)
 				.toZMin()
 	get.setName(name)
-	parts.add(get)
 	count++;
-	if(count>5) {
+	if(count>toLoad.size()/2) {
 		if(count%2==0){
-		get=get.rotz(90)
+			get=get.rotz(90)
 		}
 		get.setPrintBedNumber(1)
+	}else{
+		get.setPrintBedNumber(0)
 	}
+	parts.add(get)
 }
 
 return parts
