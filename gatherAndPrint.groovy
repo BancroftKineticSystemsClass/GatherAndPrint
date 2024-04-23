@@ -145,6 +145,13 @@ for (GHRepository R : repos) {
 	GHRelease release= R.getLatestRelease()
 	if(release!=null) {
 		String rGetFullName = R.getFullName()
+		println "Files for "+rGetFullName
+		if(rGetFullName.contains("Group09"))
+			continue;
+//		if(rGetFullName.contains("Group03"))
+//			continue;
+//		if(rGetFullName.contains("Group08"))
+//			continue;
 		String tmpDirsLocation = System.getProperty("java.io.tmpdir");
 		File tmp = new File(tmpDirsLocation+"/"+rGetFullName)
 		tmp.mkdirs( )
@@ -164,15 +171,17 @@ for(File f:toLoad) {
 	String name = f.getAbsolutePath()
 	CSG get = Vitamins.get(f)
 				.toZMin()
-				.rotz(count>toLoad.size()/2?90:0)
+				//.rotz(count>toLoad.size()/2?90:0)
 	get.setName(name)
 	count++;
-	if(count%3==0)
+	if(count%4==0)
 		get.setPrintBedNumber(0)
-	if((count-1)%3==0)
+	if((count-1)%4==0)
 		get.setPrintBedNumber(1)
-	if((count-2)%3==0)
+	if((count-2)%4==0)
 		get.setPrintBedNumber(2)
+	if((count-3)%4==0)
+		get.setPrintBedNumber(3)
 	parts.add(get)
 }
 

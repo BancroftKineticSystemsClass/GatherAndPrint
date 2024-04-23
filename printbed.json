@@ -1,8 +1,8 @@
 {
   "locations": {
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group04/manufacturing/Simple_Robot/manufacturing/Print-Bed-0.stl": {
-      "x": -155.9675754319057,
-      "y": 102.00865553455745,
+      "x": 3.552713678800501E-15,
+      "y": 125.16096496582031,
       "z": 0.0,
       "rotation": {
         "storage": {
@@ -40,8 +40,8 @@
       }
     },
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group07/manufacturing/SimpleRobot/manufacturing/Print-Bed-0.stl": {
-      "x": -200.0,
-      "y": 240.0,
+      "x": 0.0,
+      "y": 33.22822164153127,
       "z": 0.0,
       "rotation": {
         "storage": {
@@ -157,8 +157,8 @@
       }
     },
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group01/manufacturing/SimpleRobot/manufacturing/Print-Bed-0.stl": {
-      "x": -174.88155379801123,
-      "y": 1.764582791498405,
+      "x": -192.2675274694005,
+      "y": 142.50650024414062,
       "z": 0.0,
       "rotation": {
         "storage": {
@@ -222,8 +222,8 @@
       }
     },
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group03/manufacturing/SimpleRobot1/manufacturing/Print-Bed-0.stl": {
-      "x": 62.840306159295466,
-      "y": 39.122334238067864,
+      "x": 56.95387751175684,
+      "y": 33.350973762084934,
       "z": 0.0,
       "rotation": {
         "storage": {
@@ -274,8 +274,8 @@
       }
     },
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group02/manufacturing/SimpleRobot/manufacturing/Print-Bed-0.stl": {
-      "x": -233.50181435779254,
-      "y": -128.78719532836428,
+      "x": -208.89015852405976,
+      "y": -144.39437740622466,
       "z": 0.0,
       "rotation": {
         "storage": {
@@ -339,8 +339,8 @@
       }
     },
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group08/manufacturing/Print-Bed-0.stl": {
-      "x": -101.80136823149581,
-      "y": 5.621248961853652,
+      "x": -94.12963104248047,
+      "y": 6.808794498443632,
       "z": 0.0,
       "rotation": {
         "storage": {
@@ -365,8 +365,8 @@
       }
     },
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group05/manufacturing/SimpleRobot/manufacturing/Print-Bed-0.stl": {
-      "x": -239.99768815569908,
-      "y": -200.4775792658329,
+      "x": -194.37208883115898,
+      "y": 31.03280301997046,
       "z": 0.0,
       "rotation": {
         "storage": {
@@ -430,8 +430,21 @@
       }
     },
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group06/manufacturing/Print-Bed-0.stl": {
-      "x": 156.0165786743164,
-      "y": 125.91955342696548,
+      "x": -200.61065167188644,
+      "y": 243.4589238166809,
+      "z": 0.0,
+      "rotation": {
+        "storage": {
+          "q0": 1.0,
+          "q1": 0.0,
+          "q2": 0.0,
+          "q3": 0.0
+        }
+      }
+    },
+    "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group06/manufacturing/SimpleRobot1/manufacturing/Print-Bed-0.stl": {
+      "x": -232.533203125,
+      "y": -61.847541809082,
       "z": 0.0,
       "rotation": {
         "storage": {
@@ -534,7 +547,7 @@
       }
     },
     "/tmp/BancroftKineticSystemsClass/KineticSystems2024Group09/manufacturing/SimpleRobot/manufacturing/Print-Bed-0.stl": {
-      "x": 0.0,
+      "x": 5.91618826351025,
       "y": 185.9373321533203,
       "z": 0.0,
       "rotation": {
