@@ -148,10 +148,10 @@ for (GHRepository R : repos) {
 		println "Files for "+rGetFullName
 		if(rGetFullName.contains("Group09"))
 			continue;
-//		if(rGetFullName.contains("Group03"))
-//			continue;
-//		if(rGetFullName.contains("Group08"))
-//			continue;
+		if(rGetFullName.contains("Group03"))
+			continue;
+		if(rGetFullName.contains("Group08"))
+			continue;
 		String tmpDirsLocation = System.getProperty("java.io.tmpdir");
 		File tmp = new File(tmpDirsLocation+"/"+rGetFullName)
 		tmp.mkdirs( )
